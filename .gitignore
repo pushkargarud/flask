@@ -1,0 +1,18 @@
+# Ignore virtual environment folder
+venv/
+
+# Ignore database files (for SQLite)
+*.db
+
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ignore IDE configurations
+.idea/
+.vscode/
+
+# Ignore environment configuration files
+.env
