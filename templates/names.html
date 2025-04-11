@@ -4,10 +4,10 @@
     <title>All Names</title>
 </head>
 <body>
-    <h2>List of Submitted Names</h2>
+    <h2>List of Submitted Names and Ages</h2>
     <ul>
-        {% for n in names %}
-            <li>{{ n }}</li>
+        {% for n in entries %}
+            <li>{{ n.name}}-Age:{{n.age}}</li>
         {% endfor %}
     </ul>
     <a href="/">Back to Home</a>
