@@ -1,6 +1,7 @@
 
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
+import os
 
 
 app = Flask(__name__)
@@ -57,10 +58,12 @@ def all_names():
        entries = NameAge.query.all()
        return render_template('names.html', entries=entries)
 
+# This ensures that the app uses the correct port when running on Glitch
 if __name__ == '__main__':
-    with app.app_context():
-        db.create_all()
-    app.run(debug=True)
+    # Get the port from the environment, default to 5000 if not set
+    port = int(os.environ.get('PORT', 5000))
+    # Run the app, making it listen on all interfaces (host='0.0.0.0')
+    app.run(debug=True, host='0.0.0.0', port=port)
 
 @app. route('/age')
 def all_ages():
