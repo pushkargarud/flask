@@ -6,12 +6,18 @@
 <body>
     <h2>List of Submitted Names and Ages</h2>
     <ul>
-        {% for n in entries %}
-            <li>{{ n.name}}-Age:{{n.age}}</li>
+        {% for p in people %}
+          <li>{{ p.name }} ({{ p.age }})
+              <ul>
+                {% for h in p.hobbies %}
+                  <li>Hobby: {{ h.description }}</li>
+                {% endfor %}
+              </ul>
+          </li>
         {% endfor %}
-    </ul>
+      </ul>
+      
     <a href="/">Back to Home</a>
 </body>
 </html>
-
 
