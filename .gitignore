@@ -16,3 +16,8 @@ __pycache__/
 
 # Ignore environment configuration files
 .env
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
