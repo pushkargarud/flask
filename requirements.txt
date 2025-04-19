@@ -1,16 +1,13 @@
 attrs==23.2.0
 Babel==2.10.3
 blinker==1.7.0
-
 build==1.0.3
 CacheControl==0.14.0
 certifi==2023.11.17
 chardet==5.2.0
 cleo==2.1.0
 click==8.1.6
-
 colorama==0.4.6
-command-not-found==0.3
 configobj==5.0.8
 crashtest==0.4.1
 cryptography==41.0.7
@@ -69,7 +66,6 @@ pyparsing==3.1.1
 pyproject_hooks==1.0.0
 pyrsistent==0.20.0
 pyserial==3.5
-python-apt==2.7.7+ubuntu4
 python-dateutil==2.8.2
 python-debian==0.1.49+ubuntu2
 pytz==2024.1
@@ -87,8 +83,6 @@ toml==0.10.2
 tomlkit==0.12.4
 trove-classifiers==2024.1.31
 typing_extensions==4.10.0
-ubuntu-drivers-common==0.0.0
-ubuntu-pro-client==8001
 ufw==0.36.2
 unattended-upgrades==0.1
 urllib3==2.0.7
@@ -98,3 +92,4 @@ wheel==0.42.0
 xdg==5
 xkit==0.0.0
 zipp==1.0.0
+
